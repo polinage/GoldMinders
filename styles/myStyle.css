@@ -1,0 +1,307 @@
+﻿html {
+    background: transparent !important;
+}
+
+body {
+    /*background-color: #C1EDFF;*/
+    /* background-color: white; */
+    /*    background-color: #ffd7ba;*/
+    /* background-color: #220624; */
+    /* background-color: #311334;
+    background-color: #2E0842; */
+
+    /* background-color: #411D59; */
+    /* background-color: #18032a; */
+    background-color: #111;
+    font-family: Rubik, sans-serif;
+    margin: 0;
+}
+
+iframe {
+    border: 0;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+#gameArea {
+    overflow: hidden;
+    position: relative;
+    height: 80vh;
+    width: 90vw;
+    margin: 0 auto;
+}
+
+.hide {
+    display: none;
+}
+
+header {
+
+    background-color: #42210b;
+    /* background-color: #18032A; */
+
+    /*  background-color: rgb(196,153,108);
+    background-color: white;*/
+    width: 100%;
+    height: 50px;
+    position: relative;
+    direction: rtl;
+    display: block;
+    direction: rtl;
+    z-index: 3;
+}
+
+/*כותרת משחק*/
+header>a>p {
+    font-family: Rubik, sans-serif;
+    font-size: 12pt;
+    font-weight: 600;
+    position: relative;
+    top: -2px;
+    right: 2px;
+    color: white;
+    display: inline-block;
+    direction: rtl;
+}
+
+/*לוגו*/
+#logo {
+    height: 25px;
+    position: relative;
+    padding-top: 10px;
+    padding-right: 10px;
+    direction: rtl;
+}
+
+#logoHIT {
+    position: relative;
+    /* top: 40px; */
+    width: 200px;
+    height: auto;
+    /* padding: 5px 10px; */
+    left: 170px;
+    bottom: 50px;
+}
+
+#logoBig,
+#howImg {
+    width: 150px;
+    position: relative;
+    left: 325px;
+}
+
+#logoBig {
+    margin-top: 50px;
+}
+
+#howImg {
+    top: 120px;
+    margin-bottom: 80px;
+}
+
+.popupBG {
+    width: 800px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: -2;
+}
+
+nav {
+    margin-top: -60px;
+    margin-left: 10px;
+    direction: rtl;
+}
+
+nav ul {
+    list-style: none;
+    direction: rtl;
+}
+
+nav ul li {
+    display: inline-block;
+    float: left;
+    direction: rtl;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    position: relative;
+    padding: 5px 10px;
+    font-weight: 400;
+    font-size: 12pt;
+    font-family: Rubik, sans-serif;
+    direction: rtl;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    font-weight: 600;
+    cursor: pointer;
+    font-family: Rubik, sans-serif;
+    direction: rtl;
+    text-decoration: none;
+}
+
+
+#aboutDiv,
+#howToPlayDiv {
+    width: 800px;
+    position: fixed;
+    top: 60px;
+    z-index: 4;
+    padding: 10px;
+    padding-bottom: 10px;
+    right: 0;
+    left: 0;
+    margin-right: auto;
+    margin-left: auto;
+    color: rgb(66, 33, 11);
+}
+
+
+#AboutTitle,
+#HowTitle {
+    position: relative;
+    top: 70px;
+    text-align: center;
+    direction: rtl;
+    font-family: Rubik, sans-serif;
+    font-size: 30px;
+}
+
+
+.closeBtn {
+    cursor: pointer;
+    position: absolute;
+    top: 50px;
+    left: 20px;
+}
+
+.closeBtn>img {
+    width: 100px;
+    height: 100px;
+    position: relative;
+
+}
+
+#aboutDiv>.aboutText,
+#howToPlayDiv>.howText {
+    /* top: 70px; */
+    position: relative;
+    text-align: center;
+    direction: rtl;
+    font-family: Rubik, sans-serif;
+}
+
+#aboutDiv>.aboutText {
+    font-size: 20px;
+}
+
+#howToPlayDiv>.howText {
+    font-size: 22px;
+    line-height: 1.5;
+    padding: 10px;
+}
+
+#HowTitle {
+    top: 30px;
+    position: relative;
+    text-align: center;
+    direction: rtl;
+    font-family: Rubik, sans-serif;
+    font-size: 35px;
+}
+
+
+.bounceInDown {
+    -webkit-animation-name: bounceInDown;
+    animation-name: bounceInDown;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@-webkit-keyframes bounceInDown {
+
+    0%,
+    60%,
+    75%,
+    90%,
+    100% {
+        -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+        transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    }
+
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -3000px, 0);
+        transform: translate3d(0, -3000px, 0);
+    }
+
+    60% {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 25px, 0);
+        transform: translate3d(0, 25px, 0);
+    }
+
+    75% {
+        -webkit-transform: translate3d(0, -10px, 0);
+        transform: translate3d(0, -10px, 0);
+    }
+
+    90% {
+        -webkit-transform: translate3d(0, 5px, 0);
+        transform: translate3d(0, 5px, 0);
+    }
+
+    100% {
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+@keyframes bounceInDown {
+
+    0%,
+    60%,
+    75%,
+    90%,
+    100% {
+        -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+        transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    }
+
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -3000px, 0);
+        transform: translate3d(0, -3000px, 0);
+    }
+
+    60% {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 25px, 0);
+        transform: translate3d(0, 25px, 0);
+    }
+
+    75% {
+        -webkit-transform: translate3d(0, -10px, 0);
+        transform: translate3d(0, -10px, 0);
+    }
+
+    90% {
+        -webkit-transform: translate3d(0, 5px, 0);
+        transform: translate3d(0, 5px, 0);
+    }
+
+    100% {
+        -webkit-transform: none;
+        transform: none;
+    }
+}

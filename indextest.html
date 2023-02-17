@@ -1,0 +1,80 @@
+﻿<!doctype html>
+<html lang="he">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gold Minders</title>
+    <meta name="description" content="Gold Minders" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="Polina Gershman, Stav Zipori, Shahar Azulay" />
+    <link rel="icon" type="image/x-icon" href="images\FAVICON.png">
+
+    <!--google font import-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700;800&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+
+    <link href="styles/myStyle.css" rel="stylesheet" />
+
+
+    <!--jQuery library-->
+    <script src="jScripts/jquery-1.12.0.min.js"></script>
+    <!--הקוד שמפעיל את תפריט הניווט-->
+    <script src="jScripts/myScript.js"></script>
+
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <!--קישור לדף עצמו כדי להתחיל את המשחק מחדש בלחיצה על הלוגו-->
+            <a href="indextest.html">
+                <img id="logo" src="images\Logo.png" />
+                <!--הלוגו של המשחק שלכם-->
+                <p>Gold Minders</p>
+            </a>
+            <!--תפריט הניווט בראש העמוד-->
+            <nav>
+                <ul>
+                    <li><a class="about">אודות</a></li>
+                    <li><a class="howToPlay">איך משחקים?</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div id="aboutDiv" class="popUp bounceInDown hide">
+
+            <img id="About" class="popupBG" src="images\Wood.png" />
+            <a class="closeAbout closeBtn"><img src="images/Xbutton.png"></a>
+            <p id="AboutTitle" style="font-weight:bold">אודות</p>
+            <img id="logoBig" src="images/logoBig.png" />
+            <p class="aboutText"><b>אפיון ופיתוח:</b>
+                שחר אזולאי, פולינה גרשמן וסתיו צפורי </p>
+            <p class="aboutText" style="font-weight:bold">אופיין ופותח במסגרת פרויקט בקורסים:</p>
+            <p class="aboutText"> סביבות לימוד אינטראקטיביות 1 + תכנות אינטראקטיבי 1</p>
+            <p class="aboutText">תשפ"ג</p>
+            <a target="_blank" href="https://www.hit.ac.il/"> <img id="logoHIT" src="images\HITlogo.png" /></a>
+        </div>
+        <div id="howToPlayDiv" class="popUp bounceInDown hide">
+            <img id="How" class="popupBG" src="images\Wood.png" />
+            <a class="closeHowToPlay closeBtn"><img src="images/Xbutton.png"></a>
+            <img id="howImg" src="images/Asset 23.png">
+            <p id="HowTitle" style="font-weight:bold">איך משחקים? </p>
+            <div class="howText">מכוונים את הצבת באמצעות החיצים במקלדת,<br>
+                בוחרים תשובה נכונה וגוררים את השק המתאים<br>
+                באמצעות לחיצה על מקש הרווח.</div>
+
+        </div>
+
+        <div id="gameArea" class="">
+            <!--src = הקישור של דף המשחק שלכם -->
+            <iframe id="gameIframe" src="https://i.simmer.io/@polinagersh/gold-minders" frameBorder="0"
+                allowfullscreen="">Browser not compatible.</iframe>
+        </div>
+    </div>
+</body>
+
+</html>
